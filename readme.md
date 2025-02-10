@@ -1,55 +1,43 @@
 # Login and Registration Application
 
-Aplikasi ini menyediakan sistem login dan registrasi dengan dua jenis pengguna: **Admin** dan **User**. Admin memiliki akses penuh untuk mengedit data, sedangkan User memiliki akses terbatas. Setelah registrasi, pengguna akan menerima email konfirmasi sebelum dapat login.
+This application provides a login and registration system with two user roles: **Admin** and **User**. Admins have full access to edit data, while Users have limited access. After registration, users will receive a confirmation email before being able to log in.
 
-## Teknologi yang Digunakan
+## Technologies Used
 
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Frontend**: React.js
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Frontend**: React.js  
 
-## Fitur Utama
+## Key Features
 
-1. **Halaman Home**
+### 1. **Home Page**
+   - The main page of the application with general information.
+   - Screenshots:  
+     ![Home Page](/scrinsut/beforelogin.png)  
+     ![After Login](/scrinsut/sudahverifikasih.png)  
 
-   - Halaman utama aplikasi dengan informasi umum.
-   - Screenshot:
+### 2. **Login Page**
+   - Users can log in using their registered email and password.  
+     ![Login Page](/scrinsut/loginkerja.png)  
 
-     ![Home Page](/scrinsut/beforelogin.png)
-     ![afterlogin](/scrinsut/sudahverifikasih.png)
+### 3. **Register Page**
+   - New users can register by filling in their name, email, and password.
+   - After registration, users will receive an email confirmation with a verification code. Only verified users can log in.  
+     ![Register Page](/scrinsut/registerconfimasion.png)  
+     ![Email Verification Page](/scrinsut/verifikasihemail.png)  
+     ![Verification Success Page](/scrinsut/verifikasih.png)  
 
-2. **Halaman Login**
+### 4. **Forgot Password Page**
+   - Users can reset their password by entering their registered email. A confirmation code will be sent via email.  
+     ![Forgot Password Page](/scrinsut/resetpassword.png)  
 
-   - Pengguna dapat login menggunakan email dan password yang telah terdaftar.
+### 5. **Email Confirmation Page**
+   - After registration, users must confirm their account via email before logging in.  
+     ![Email Confirmation Page](/scrinsut/verifikasih.png)  
 
-     ![Login Page](/scrinsut/loginkerja.png)
+## Steps to Run the Application
 
-3. **Halaman Register**
-
-   - Pengguna baru dapat mendaftar dengan mengisi nama, email, dan password.
-   - Pengguna baru sebelumm mendaftar akan ada konfirmasi ke email klik kode konfirmasi baru bisa login.
-
-     ![Register Page](/scrinsut/registerconfimasion.png)
-     ![Register Page](/scrinsut/verifikasihemail.png)
-     ![Register Page](/scrinsut/verifikasih.png)
-     -baru bisa login setelah klik kode konfirmasi
-     ![Register Page](/scrinsut/verifikasihemail.png)
-
-4. **Halaman Lupa Password**
-
-   - Pengguna dapat mengatur ulang password jika lupa dengan memasukkan email terdaftar dan akn ada kode konfirmasi dengan email.
-
-     ![Forgot Password Page](/scrinsut/resetpassword.png)
-
-5. **Halaman Konfirmasi Email**
-
-   - Setelah registrasi, pengguna harus mengkonfirmasi akun melalui email sebelum dapat login.
-
-     ![Email Confirmation Page](/scrinsut/verifikasih.png)
-
-## Langkah-Langkah Menjalankan Aplikasi
-
-1. **Clone Repository**
+1. **Clone the Repository**
 
    ```bash
    git clone <repository-url>
@@ -68,8 +56,8 @@ Aplikasi ini menyediakan sistem login dan registrasi dengan dua jenis pengguna: 
    npm install
    ```
 
-3. **Konfigurasi Environment Variables**
-   Buat file `.env` di direktori `backend` dan tambahkan konfigurasi berikut:
+3. **Configure Environment Variables**
+   Create a `.env` file in the `backend` directory and add the following configuration:
 
    ```env
    MONGO_URI=mongodb://127.0.0.1:27017/login_app
@@ -80,28 +68,28 @@ Aplikasi ini menyediakan sistem login dan registrasi dengan dua jenis pengguna: 
    EMAIL_PASS=your-email-password
    ```
 
-   Buat file `.env` di direktori `frontend` dan tambahkan konfigurasi berikut:
+   Create a `.env` file in the `frontend` directory and add the following configuration:
 
    ```env
    REACT_APP_API_URL=http://localhost:5000
    ```
 
-4. **Jalankan Aplikasi**
+4. **Run the Application**
 
    ```bash
-   # Jalankan backend
+   # Run backend
    cd backend
    npm start
 
-   # Jalankan frontend
+   # Run frontend
    cd ../frontend
    npm start
    ```
 
-5. **Akses Aplikasi**
-   Buka browser dan akses [http://localhost:3000](http://localhost:3000).
+5. **Access the Application**
+   Open a browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-## Struktur Folder
+## Project Structure
 
 ```
 /project-directory
@@ -111,12 +99,11 @@ Aplikasi ini menyediakan sistem login dan registrasi dengan dua jenis pengguna: 
 |-- readme.md
 ```
 
-## Fitur Mendatang
+## Upcoming Features
 
-- Reset password menggunakan OTP.
-- Peningkatan tampilan antarmuka.
-- Penambahan dashboard admin untuk manajemen data pengguna.
+- Reset password using OTP.
+- Enhanced user interface design.
+- Admin dashboard for user data management.
 
 ---
-
-Dikembangkan oleh **[Nama Anda]**.
+Developed by **jeripatut**.
